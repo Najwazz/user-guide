@@ -1,0 +1,53 @@
+
+
+<section id="main" class="column">
+    <%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <h4 class="alert_error"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+      </h4>
+<% end %>
+
+<article class="module width_3_quarter">
+  <header><center><h3>New user</h3></center></header>
+    <div class="module_content">
+      <fieldset>
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </fieldset>
+      <fieldset>
+        <%= f.label :username  %>
+        <%= f.text_field :username  %>
+      </fieldset>
+      <fieldset>
+        <%= f.label :password %>
+        <%= f.text_field :password %>
+      </fieldset>
+      <fieldset>
+         <%= f.label :password_confirmation %>
+         <%= f.text_field :password_confirmation %>
+      </fieldset>
+       <fieldset>
+        <%= f.label :first_name %>
+         <%= f.text_field :first_name %>
+      </fieldset>
+      <fieldset>
+         <%= f.label :last_name %><br />
+          <%= f.text_field :last_name %><br />
+      </fieldset>
+      <fieldset>
+         <%= f.label :display_name %><br />
+           <%= f.text_field :display_name %>
+      </fieldset>
+      
+        <div class="submit_link">
+          <%= f.submit %>
+        </div>
+<%end %>
+    </div>
+ </article>
+ 

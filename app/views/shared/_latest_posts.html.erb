@@ -1,0 +1,8 @@
+
+<h4>Latest posts</h4>
+    <ul>
+	<% @posts.each do |post| -%>
+		<li><%= link_to(h(post.title),:action => 'view_post', :id => post.id) %></li>
+	<% end -%>
+	</ul>
+ 

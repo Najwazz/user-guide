@@ -1,0 +1,32 @@
+<% @page_title = 'Categories' -%>
+<article class="module width_3_quarter">
+  <header><center><h3>List categories</h3></center></header>
+    <div id="tab2" class="tab_content">
+      <table class="tablesorter" cellspacing="0"> 
+      <thead> 
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+      </thead> 
+      <tbody> 
+        <% for category in @categories -%>
+          <tr>
+            <td><%= h(category.name) %></td>
+            <td><%= h(category.description) %></td>
+            <td><%= link_to(image_tag('icn_edit.png'), :controller =>'categories',:action => 'list', :id => category) %>
+            <%= button_to  'delete', {:controller => :categories,
+                  :confirm => 'Are you sure you want to remove this category?',
+                  :action => 'destroy', :id => category.id },
+                  :method => 'delete' %>    
+              </td>
+          </tr>
+ <% end %>
+      </tbody> 
+      
+      </table>
+
+         
+</div><!-- end of #tab1 -->
+</article>

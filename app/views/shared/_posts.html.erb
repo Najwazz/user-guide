@@ -1,0 +1,8 @@
+
+<h4><%= link_to(h(post.title), :action => 'view_post', :id => post.id) %></h4>
+	<ul class="post-meta-links list-inline">
+		<li><span> <i class="fa fa-bookmark"> </i> </span> <%= post.created_at.strftime("%B %d,%Y") %></li>
+		<li><span><i class="fa fa-user"> </i> </span><%= h(post.author.display_name) %> </li>
+		<li><span><i class="fa  fa-folder"> </i> </span><%= post.categories.collect {|cat| cat.name}.join(", ") %></li>
+	</ul>
+				

@@ -1,0 +1,36 @@
+<article class="module width_3_quarter">
+  <header><center><h3>List users</h3></center></header>
+    <div id="tab2" class="tab_content">
+                <table class="tablesorter" cellspacing="0"> 
+                <thead> 
+                    
+                     <tr>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Display name</th>
+                        <th></th>
+                    </tr>
+                </thead> 
+                <tbody> 
+                  <% @users.each do |user| %>
+                      <tr>
+                        <td><%= user.email %></td>
+                        <td><%= user.username %></td>
+                        <td><%= user.first_name %></td>
+                        <td><%= user.last_name %></td>
+                        <td><%= user.display_name %></td>
+                        <td><%= link_to(image_tag('icn_edit.png'),edit_user_path(user)) %>
+                            <%= button_to  'delete', {:controller => :users,
+                            :action => 'destroy', :id => user.id },
+                            :method => 'delete' %>
+                        </td>
+
+                    </tr>
+
+                  <% end %>
+                </tbody> 
+                </table>
+    </div><!-- end of #tab1 -->
+</article>

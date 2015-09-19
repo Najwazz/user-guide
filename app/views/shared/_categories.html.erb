@@ -1,0 +1,14 @@
+<h4>Topics</h4>
+    <ul>
+		<% @all_categories.each do |cat| -%>
+		    <li>
+				<%= link_to(cat.name, :action => 'category', :id => cat.id)  %><span class="badge"> <%= @count_posts=Post.find(:all, 
+			  	:include => [:categories],
+	            :conditions => ["status = 'published' AND categories.name = ?", cat.name]).count() %></span>
+				
+	        </li>
+		<% end -%>
+	</ul>
+
+
+                               

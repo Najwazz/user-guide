@@ -1,0 +1,290 @@
+
+    <header id="section_header" class="navbar-fixed-top main-nav" role="banner">
+    	<div class="container">
+    		<!-- <div class="row"> -->
+                 <div class="navbar-header ">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                          <%= image_tag("logo.PNG") %>
+
+                        </a>
+                 </div><!--Navbar header End-->
+                 	<nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
+                        <ul class="nav navbar-nav navbar-right ">
+                           	<li class="active"> <a href="#slider_part" >Home </a></li>
+                            <li><a href="#service"  >Support</a> </li>
+                            <li><a href="#pricing_table" >Pricing</a> </li>
+                            <li><a href="#contact" >Contact Us</a> </li>
+                        </ul>
+                     </nav>
+                </div><!-- /.container-fluid -->
+</header>
+ <!-- Slider start -->
+    <section id="slider_part">
+         <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+            <!-- Indicators -->
+         	 <ol class="carousel-indicators text-center">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             </ol>
+
+           	<div class="carousel-inner">
+           	 	<div class="item active">
+           	 		<div class="overlay-slide">
+           	 			 <%= image_tag("banner/p5.jpg" ,class: "img-responsive")%>
+           	 		</div>
+           	 		<div class="carousel-caption">
+               	 		<div class="col-md-12 col-xs-12 text-center">
+                       <h2>Gost</h2>
+               	 			<h3 class="animated2">Everything you need to know</h3>
+               	 			<div class="line"></div>
+               	 			<p class="animated3">to start developing with Ghost </p>
+               	 		</div>
+           	 		</div>
+           	 	</div>
+                <div class="item">
+                    <div class="overlay-slide">
+                        <%= image_tag("banner/p3.jpg",class: "img-responsive")%>
+           	 		</div>
+           	 		<div class="carousel-caption">
+               	 		<div class="col-md-12 col-xs-12 text-center">
+                    <h2>Gost</h2>
+               	 			<h3 class="animated3"><b>The first steps </b>to setting up new blog for <b>the first time</b></h3>
+               	 			<div class="line"></div>
+               	 			
+               	 		</div>
+           	 		</div>
+           	 	</div>
+           	 	<div class="item">
+                    <div class="overlay-slide">
+                         <%= image_tag("banner/p10.jpg" ,class: "img-responsive")%>
+           	 		</div>
+           	 		<div class="carousel-caption">
+               	 		<div class="col-md-12 col-xs-12 text-center">
+                     <h2>Gost</h2>
+               	 			<h3 class="animated3"> Finding your way around, and getting set up the way you want</h3>
+               	 			<div class="line"></div>
+               	 		
+               	 		</div>
+           	 		</div>
+           	 	</div>
+
+           	 </div> 	 <!-- End Carousel Inner -->
+
+            <!-- Controls -->
+            <div class="slides-control ">
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                	<span><i class="fa fa-angle-left"></i></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                	<span><i class="fa fa-angle-right"></i></span>
+                </a>
+            </div>
+        </div>
+  	</section>
+    <!--/ Slider end -->
+
+<!-- Service Area start -->
+
+    <section id="service">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="feature_header text-center">
+                        </br>
+                            <h1 class="feature_title"><b>Ghost Developer Guide</b> </h1></br>
+                            <h4 class="feature_sub">Everything you need to know to start developing with Ghost.</h4></br></br>
+                            <a href="/"><button class="btn btn-main">Click here !</button></a></br></br>
+                            <div class="divider"></div>
+                        </div>
+                    </div>  <!-- Col-md-12 End -->
+                </div>
+        </div>  <!-- Container End -->
+    </section>
+<!-- Service Area End -->
+
+<div class="clearfix"></div>
+
+
+
+<!-- Counter Strat -->
+
+
+<div class="clearfix"></div>
+
+<!-- Pricing Table Start -->
+<section id="pricing_table" class="pricing_overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="feature_header text-center">
+                    <h3 class="feature_title"><b>Open Software — Pro Service</b></h3>
+                    <h4 class="feature_sub">Try Ghost(Pro) free for 14 days. No credit card required.. </h4>
+                    <div class="divider"></div>
+                </div>
+            </div>  <!-- Col-md-12 End -->
+
+            <div class="text-center pricing">
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                    <div class="single_table">
+                    <div class="plan_wraper"></div>
+                        <ul>
+                            <li class="plan">TEAM<br><span>per month </span></li>
+                            <li class="price"> 80 <span>$</span></li>
+                            <li> <b>350,000 views</b></li>
+                            <li>Unlimited transfer and storag</li>
+                            <li>Automatic updates and backups</li>
+                            <li> Upload any theme or app</li>
+                            <li> Worldwide CDN & security protection</li>
+                            <li> Priority support</li>
+                        </ul>
+                    </div>
+                </div> <!-- Single col-md-4 End -->
+                 <div class="col-md-4 col-xs-12 col-sm-12">
+                    <div class="single_table grey_bg  ">
+                        <div class="plan_wraper"></div>
+                        <ul>
+                            <li class="plan">BUSINESS  <br><span>per month</span></li>
+                            <li class="price"> 200 <span>$</span></li>
+                            <li><b> 1,000,000 views</b></li>
+                            <li><b> Unlimited blogs</b></li>
+                            <li>Unlimited transfer and storage</li>
+                            <li>Automatic updates and backups</li>
+                            <li>Upload any theme or app</li>
+                            <li>Worldwide CDN & security protection</li>
+                            <li>Priority support</li>
+                            <li>Dedicated environment</li>
+                            <li>Free migration</li>
+
+                        </ul>
+                    </div>
+                </div> <!-- Single col-md-4 End -->
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                    <div class="single_table dark_bg">
+                        <div class="plan_wraper"></div>
+                        <ul>
+                            <li class="plan">ADVANCED <br><span>per month</span></li>
+                            <li class="price"> 24 <span>$</span></li>
+                            <li> <b>100,000 views</b></li>
+                            <li><b>3 blogs</b></li>
+                            <li>Unlimited transfer and storage</li>
+                            <li> Automatic updates and backups</li>
+                            <li> Upload any theme or app</li>
+                            <li> Worldwide CDN & security protection</li>
+                        </ul>
+                    </div>
+                </div> <!-- Single col-md-4 End -->
+                
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pricing Section End -->
+<!-- Pricing Table End -->
+
+<!-- Client Carousel Start -->
+  <section id="client">
+  	<div class="container">
+  	<!-- <h2 class="text-center wow slideInLeft"> Our Respectable client</h2> -->
+        <div class="row wow fadeInLeft">
+           <center> 
+             <h3 class="feature_title">Our clients </h3>
+                <div class="divider"></div>
+             <h4 class="feature_sub"> Join some of the world's most important organisations who publish with <b>Ghost</b></h4></center>
+          <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
+            <div class="item client_logo">
+              <a href="#">
+                 <%= image_tag("clients/client1.png" ,class: "img-responsive")%>
+              </a>
+            </div>
+            <div class="item client_logo">
+              <a href="#">
+                <%= image_tag("clients/client2.png" ,class: "img-responsive")%>
+              </a>
+            </div>
+            <div class="item client_logo">
+              <a href="#">
+                <%= image_tag("clients/client3.png" ,class: "img-responsive")%>
+              </a>
+            </div>
+            <div class="item client_logo">
+              <a href="#">
+                <%= image_tag("clients/client4.png"  ,class: "img-responsive")%>
+              </a>
+            </div>
+            <div class="item client_logo">
+              <a href="#">
+                <%= image_tag("clients/client5.png"  ,class: "img-responsive")%>
+              </a>
+            </div>
+            <div class="item client_logo">
+              <a href="#">
+                <%= image_tag("clients/client6.png"  ,class: "img-responsive")%>
+              </a>
+            </div>
+            <div class="item client_logo">
+              <a href="#">
+                <%= image_tag("clients/client7.png"  ,class: "img-responsive")%>
+              </a>
+            </div>
+          </div><!-- Owl carousel end -->
+        </div><!-- Main row end -->
+      
+  	</div>
+  </section>
+<!-- Client Carousel End -->
+
+<!-- Conatct Area Start-->
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+  			<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="feature_header text-center">
+                    <h3 class="feature_title">Keep In <b>touch</b></h3>
+                    <div class="divider"></div>
+                </div>
+  			</div>
+        </div>
+        <div class="row">
+             <div class="contact_full">
+                <div class="col-md-6 left">
+                    <div class="left_contact">
+                        <form action="role">
+                            <div class="form-level">
+                                <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
+                                <span class="form-icon fa fa-user"></span>
+                            </div>
+                            <div class="form-level">
+                                <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
+                                <span class="form-icon fa fa-envelope-o"></span>
+                            </div>
+                            <div class="form-level">
+                                <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
+                                <span class="form-icon fa fa-phone"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6 right">
+                    <div class="form-level">
+                        <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
+                        <span class="form-icon fa fa-pencil"></span>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-main featured">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

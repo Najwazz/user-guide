@@ -1,0 +1,44 @@
+ 
+    <header id="section_header" class="navbar-fixed-top main-nav" role="banner">
+    	<div class="container">
+    		<!-- <div class="row"> -->
+                 <div class="navbar-header ">
+                        <a class="navbar-brand" href="../home">
+                          <%= image_tag("logo.PNG") %>
+
+                        </a>
+                 </div><!--Navbar header End-->
+                
+        </div><!-- /.container-fluid -->
+</header>
+<section id="blog-single">
+        <div class="container">
+                <!-- Portfolio item slider start -->
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+               </br>
+                <div class="blog-desc">
+					<%= render(:partial => 'shared/post', :collection => @posts) %> 
+					<%= 'There are no posts that match your selection.' if @posts.empty? %>  
+				    <div class="clearfix"></div>
+                </div> 
+			</div>
+
+
+			<div class="row">
+	            <!-- sidebar start -->
+	            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	                <div class="blog-catagory">	
+	                	<%= render(:partial => 'shared/categories')%>
+	                </div>
+	                 <div class="blog-catagory">	
+   						 <%= render(:partial => 'shared/archive_list')%>
+	                </div>
+	                 <div class="blog-catagory">	
+   						 <%= render(:partial => 'shared/latest_posts')%>
+	                </div>
+	            </div>
+	        </div>
+            
+	    </div>
+</section>
+

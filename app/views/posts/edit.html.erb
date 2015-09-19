@@ -1,0 +1,9 @@
+<% @page_title = 'Editing Post' -%>
+
+<%= render 'form' %>
+
+<% form_tag(:action => 'update', :id => @post) do -%>
+	<%= render(:partial => 'form') %>
+	<%= submit_tag("Edit", :style => "margin: 1.5em 0 0 100px;") %>
+<% end -%>
+

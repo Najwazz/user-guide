@@ -1,0 +1,46 @@
+
+<%= form_for @post, html: { multipart: true} do |f| %>
+  <% if @post.errors.any? %>
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+        <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+<% end %>
+<article class="module width_3_quarter">
+  <header><center><h3>Post New Article</h3></center></header>
+    <div class="module_content">
+      <fieldset>
+        <%= f.label :Title %>
+        <%= f.text_field :title %>
+       </fieldset>
+       <fieldset>
+          <%= f.label :Body %>
+          <%= f.text_area :body %>
+        </fieldset>
+        <fieldset style="width:48%; float:left; margin-right: 3%;"> <!-- to make two field float next to one another, adjust values accordingly -->
+         <label>Category</label>
+             <ul>
+        <% @all_categories.each do |cat| -%>
+          <li><%= check_box_tag :"categories[]", cat.id, @post.categories.map {|c| c.id }.include?(cat.id) %>
+              <%= cat.name %>
+         </li>
+        <% end -%>
+      </ul>
+        </fieldset>
+            <fieldset style="width:48%; float:left;"> <!-- to make two field float next to one another, adjust values accordingly -->
+              <%= f.label :tags %>
+              <%= f.text_field :tags %>
+            </fieldset>
+            <div class="clear"></div>
+        </div>
+      <footer>
+        <div class="submit_link">
+          <%= f.select :status, ["draft", "published"] %>
+          <%= f.submit %>
+        </div>
+
+    </div>
+ </article>
+<%end%>

@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no.js" %> <!--<![endif]-->
+    <head>
+    <!-- Basic Page Needs
+     
+    ================================================== -->
+        <meta charset="utf-8">
+        <title>Cypras-One page html5 template</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+         <!-- CSS
+         ================================================== -->
+        <!-- Bootstrap -->
+
+        <%= stylesheet_link_tag 'bootstrap.min.css'%>
+        
+        <!-- Animation -->
+        <%= stylesheet_link_tag 'animate.css'%>
+        <!-- Owl Carousel -->
+        <%= stylesheet_link_tag 'owl.carousel.css'%>
+        <%= stylesheet_link_tag 'owl.theme.css'%>
+        <!-- Pretty Photo -->
+        <%= stylesheet_link_tag 'prettyPhoto.css'%>
+        <!-- Main color style -->
+        <%= stylesheet_link_tag 'red.css'%>
+        <!-- Template styles-->
+        <%= stylesheet_link_tag 'custom.css' %>
+        <!-- Responsive -->
+        <%= stylesheet_link_tag 'responsive.css' %>
+        <%= stylesheet_link_tag 'jquery.fancybox.css?v=2.1.5', media: "screen" %>
+  
+    <%= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lato:400,300" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:400,300,500" %>
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"%>
+   
+
+    </head>
+
+ <body data-spy="scroll" data-target=".navbar-fixed-top">
+     <%= yield %>
+     
+<!-- Footer Area Start -->
+
+<section id="footer">
+   
+    <div class="footer_b">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                   
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer_mid pull-right">
+                        <ul class="social-contact list-inline">
+                            <li> <a href="http://www.facebook.com/TryGhostApp"><i class="fa fa-facebook"></i></a></li>
+                            <li> <a href="https://twitter.com/tryghost"><i class="fa fa-twitter"></i></a></li>
+                            <li> <a href="http://plus.google.com/u/0/b/114465948129362706086/114465948129362706086/posts"><i class="fa fa-google-plus"></i> </a></li>
+                            <li> <a href="https://github.com/TryGhost/Ghost"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Area End -->
+
+<!-- Back To Top Button -->
+    <div id="back-top">
+        <a href="#slider_part" class="scroll" data-scroll>
+            <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-up"></i></button>
+        </a>
+    </div>
+<!-- End Back To Top Button -->
+     <!-- Javascript Files
+    ================================================== -->
+    <!-- initialize jQuery Library -->
+
+        <!-- initialize jQuery Library -->
+        <!-- Main jquery -->
+            <%= javascript_include_tag "jquery.js"%>
+        <!-- Bootstrap jQuery -->
+        <%= javascript_include_tag "bootstrap.min.js"%>
+        <!-- Owl Carousel -->
+        <%= javascript_include_tag "owl.carousel.min.js" %>
+        <!-- Isotope -->
+        <%= javascript_include_tag "jquery.isotope.js" %>
+        <!-- Pretty Photo -->
+            <%= javascript_include_tag "jquery.prettyPhoto.js" %>
+        <!-- SmoothScroll -->
+        <%= javascript_include_tag "smooth-scroll.js" %>
+        <!-- Image Fancybox -->
+        <%= javascript_include_tag "jquery.fancybox.pack.js?v=2.1.5" %>
+        <!-- Counter  -->
+        <%= javascript_include_tag "jquery.counterup.min.js" %>
+        <!-- waypoints -->
+        <%= javascript_include_tag "waypoints.min.js" %>
+        <!-- Bx slider -->
+        <%= javascript_include_tag "jquery.bxslider.min.js" %>
+        <!-- Scroll to top -->
+        <%= javascript_include_tag "jquery.scrollTo.js" %>
+        <!-- Easing js -->
+        <%= javascript_include_tag "jquery.easing.1.3.js" %>
+         <!-- PrettyPhoto -->
+        <%= javascript_include_tag "jquery.singlePageNav.js" %>
+        <!-- Wow Animation -->
+        <%= javascript_include_tag "wow.min.js" %>
+             <!-- Custom js -->
+       <%= javascript_include_tag "custom.js" %>
+       <script>
+              $('#portfolio-slider').bxSlider({
+                mode: 'fade',
+                autoControls: false
+              });
+        </script>
+       <script>
+                $('.carousel ').carousel()
+             
+        </script>
+ 
+ </body>
+
+</html>

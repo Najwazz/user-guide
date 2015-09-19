@@ -1,0 +1,13 @@
+ <h4><%= link_to(h(post.title), :action => 'view_post', :id => post.id) %></h4>
+					<ul class="post-meta-links list-inline">
+					    <li><a href="#"><span> <i class="fa fa-bookmark"></i></span> <%=post.created_at.strftime("%B %d,%Y") %></a></li>
+					    <li><a href="#"><span><i class="fa fa-user"></i></span><%=h(post.author.display_name) %></a> </li>
+					    <li><a href="#"><span><i class="fa fa-folder"></i></span><%=post.categories.collect {|cat| cat.name}.join(", ") %></a></li>
+					</ul>
+						<% if @page_title == "view_post" %>
+						<p><%=raw (post.body) %> </p>
+						<% else %>
+						<p><%=raw (truncate post.body, length: 50) %> </p>
+						<% end %>
+	<div class="clearfix"></div>
+

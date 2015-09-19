@@ -1,0 +1,55 @@
+
+
+    <header id="section_header" class="navbar-fixed-top main-nav" role="banner">
+    	<div class="container">
+    		<!-- <div class="row"> -->
+                 <div class="navbar-header ">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                          <%= image_tag("logo.PNG") %>
+
+                        </a>
+                 </div><!--Navbar header End-->
+                 	<nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
+                        <ul class="nav navbar-nav navbar-right ">
+                           	<li> <a href="home" >Home </a></li>
+                            <li class="active"><a href="#"  >Support</a> </li>
+                            <li><a href="#pricing_table" >Pricing</a> </li>
+                            <li><a href="#contact" >Contact Us</a> </li>
+                        </ul>
+                     </nav>
+                </div><!-- /.container-fluid -->
+</header>
+<section id="blog-single">
+        <div class="container">
+                <!-- Portfolio item slider start -->
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+               </br>
+                <div class="blog-desc">
+                	<%= render(:partial => 'shared/post', :locals => {:post => @post}) %>
+					<%= 'There are no posts that match your selection.' if @posts.empty? %>  
+				    <div class="clearfix"></div>
+                </div> 
+			</div>
+
+			<div class="row">
+	            <!-- sidebar start -->
+	            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	                <div class="blog-catagory">	
+	                	<%= render(:partial => 'shared/categories')%>
+	                </div>
+	                 <div class="blog-catagory">	
+   						 <%= render(:partial => 'shared/archive_list')%>
+	                </div>
+	                 <div class="blog-catagory">	
+   						 <%= render(:partial => 'shared/latest_posts')%>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+</section>

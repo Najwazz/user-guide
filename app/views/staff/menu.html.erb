@@ -1,0 +1,20 @@
+<% @page_title = 'Staff Menu' -%>
+<section id="main" class="column">
+<%if flash[:notice]%>
+	<h4 class="alert_info"><%= flash[:notice]  %></h4>
+<% end %>
+<%if flash[:notice_ok]%>
+	<h4 class="alert_success"><%= flash[:notice_ok]  %></h4>
+<% end %>
+<%if flash[:notice_nok]%>
+	<h4 class="alert_error"><%= flash[:notice_ok]  %></h4>
+<% end %>
+	<article class="module width_full">
+		<header><center><h3 class="tabs_involved">Content Manager</h3></center>
+		</header>
+
+		<div class="tab_container">
+			 <%= render 'shared/list_posts'%>
+		</div>
+	</article>
+
